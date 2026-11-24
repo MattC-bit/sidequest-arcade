@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark"><title>SideQuest · Waiting Arcade</title>
+<link rel="stylesheet" href="arcade.css">
+</head>
+<body>
+<aside class="float-context" aria-label="Simulated conversation"><span class="eyebrow">Demo conversation</span><h2>Your conversation</h2><p class="user-bubble">Give me three names for a neon racing game.</p><p id="context-answer">Generating a demo reply…</p></aside>
+<div id="desktop"><button class="float-grip" aria-label="Move floating arcade with arrow keys" title="Drag to move · arrows move · Shift and arrows resize">⠿ Move arcade</button>
+<header class="topbar"><div class="topin">
+<button class="brand" data-do="home" aria-label="SideQuest home"><i class="brandmark" aria-hidden="true"></i><span>Side<span class="brandalt">Quest</span></span></button>
+<nav aria-label="Arcade navigation"><button data-do="home" class="navitem">Arcade</button><button data-do="library" class="navitem">Library</button><button data-do="saved" class="navitem">Saved</button></nav>
+<div class="tools"><button class="iconbtn" data-do="settings" aria-label="Settings" title="Settings">⚙</button><button id="layout-btn" class="iconbtn" data-do="layout" aria-label="Switch arcade layout" title="Switch arcade layout">▣</button><button id="close-btn" class="iconbtn" data-do="close" aria-label="Return to chat" title="Return to chat">×</button></div>
+</div></header>
+<main id="main" tabindex="-1"></main>
+</div>
+<dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-body"></div></dialog>
+<div class="sr" role="status" aria-live="polite" id="announce"></div>
+<script src="engine.js"></script>
+<script src="velocity.js"></script><script src="flux.js"></script><script src="signal.js"></script><script src="drift.js"></script><script src="arcade.js"></script>
+</body></html>

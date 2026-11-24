@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SideQuest controls</title><link rel="stylesheet" href="toolbar.css"></head>
+<body>
+<header><img class="mark" src="icons/48.png" width="34" height="34" alt=""><strong>SideQuest</strong></header>
+<main>
+<button id="open" class="primary">Open arcade <span aria-hidden="true">↗</span></button>
+<section aria-labelledby="launch-title">
+<h1 id="launch-title">When you press Play</h1>
+<label for="launch-mode">Game window</label>
+<select id="launch-mode"><option value="float">Floating over chat</option><option value="full">Full screen</option></select>
+<button id="reset-window" type="button">Reset floating window</button>
+<label class="check"><input id="random-game" type="checkbox" checked> Play a random game</label>
+</section>
+<section aria-labelledby="invite-title">
+<h1 id="invite-title">Invitations</h1><p id="status" role="status"></p>
+<label for="duration">Snooze for</label>
+<div class="row"><select id="duration"><option value="5">5 minutes</option><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="60">1 hour</option><option value="custom">Custom…</option></select><button id="snooze">Snooze</button></div>
+<label id="custom-wrap" hidden>Minutes <input id="custom" type="number" min="1" max="10080" step="1" value="5" required></label>
+<button id="enable" hidden>Enable invitations now</button>
+</section>
+<p id="help" role="status"></p>
+</main><script src="toolbar.js"></script></body></html>

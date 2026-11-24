@@ -1,0 +1,9 @@
+{
+  "name": "sidequest-arcade",
+  "version": "1.2.0",
+  "private": true,
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  }
+}
