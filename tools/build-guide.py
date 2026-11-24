@@ -5,7 +5,7 @@ root = Path(__file__).resolve().parents[1]
 content = subprocess.check_output(['pandoc', '-f', 'gfm', '-t', 'html5', str(root / 'README.md')], text=True)
 # Players opening this offline file already have the download.
 import re
-content = re.sub(r'Download <a\s+href="downloads/[^"]+"[^>]*>.*?</a>\.', 'Find the downloaded ZIP on your computer.', content, flags=re.S)
+content = re.sub(r'Click the green\s*<strong>Code</strong> button on this page,\s*then <strong>Download\s+ZIP</strong>\.', 'Find the downloaded ZIP on your computer.', content)
 lead = '<nav aria-label="Contents"><a href="#install-on-a-computer">Install</a><a href="#make-the-game-window-yours">Window controls</a><a href="#what-sidequest-can-see">Privacy</a><a href="#frequently-asked-questions">FAQ</a></nav>'
 style = """
 :root{color-scheme:dark;font:17px/1.65 system-ui,sans-serif;color:#f0edf5;background:#15121d}

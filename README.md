@@ -1,27 +1,42 @@
 # SideQuest
 
-Play a little arcade game while ChatGPT finishes its reply. SideQuest offers a round in the corner of your chat. When it detects that the answer is ready, the game pauses. Choose **Return to chat** to read it, or **Keep playing** to finish your round.
+**A little arcade for the moments you’re waiting on ChatGPT.**
 
-![Three playfields from SideQuest, including Night Run and Split Orbit](SideQuest/art/hero.webp)
+Send a message, pick up a game, and return when your reply is ready. SideQuest opens inside your chat, with 50 short games to discover.
+
+![A selection of SideQuest games](SideQuest/art/readme.png)
+
+[Download SideQuest](https://github.com/MattC-bit/sidequest-arcade/archive/refs/heads/main.zip) · [Installation](#install-on-a-computer) · [Privacy](#what-sidequest-can-see) · [FAQ](#frequently-asked-questions)
+
+## How it works
+
+1. **Send a message.** If ChatGPT is still generating after about 5½ seconds, SideQuest offers a game.
+2. **Play while you wait.** Start a random game immediately or browse the library. Your choice is remembered.
+3. **Return when you're ready.** When SideQuest detects the reply has finished, the game pauses. Return to chat or keep playing.
+
+The arcade floats over your conversation. Move it, resize it, or switch to full screen. SideQuest remembers your window size and position.
+
+> Invitations depend on the controls ChatGPT displays. Quick replies may finish before the invitation appears, and some ChatGPT layouts or languages may behave differently.
 
 ## Install on a computer
 
 Use **Google Chrome** on a computer, or another desktop browser that can load Chrome extensions, such as **Microsoft Edge** or **Brave**. Open ChatGPT in that browser. SideQuest works from a folder on your computer. Installation takes a few clicks and requires no terminal commands.
 
-1. **Download and unzip SideQuest.** Download [SideQuest-1.2.0-install.zip](downloads/SideQuest-1.2.0-install.zip?raw=true). On Windows, right-click it and choose **Extract All**. On Mac, double-click it. Move the extracted files somewhere you can keep them, such as your Documents folder.
+1. **Download and unzip SideQuest.** Click the green **Code** button on this page, then **Download ZIP**. On Windows, right-click it and choose **Extract All**. On Mac, double-click it. Move the extracted files somewhere you can keep them, such as your Documents folder.
 2. **Open your browser’s extensions page.** In the address bar, type `chrome://extensions` (Chrome), `edge://extensions` (Edge), or `brave://extensions` (Brave), then press Enter.
 3. **Turn on Developer mode** at the top of that page. Click **Load unpacked**. In the folder picker, open the extracted files and select the folder named **SideQuest**. To recognize the right folder, look inside for a file called **manifest.json**. Select the folder itself.
 4. **Refresh your ChatGPT tab.** To check the installation immediately, open the browser’s **Extensions** menu near the address bar, click **SideQuest**, then **Open arcade**. Pin the lightning icon if you’d like a shortcut.
 
-If you downloaded the whole repository using **Code → Download ZIP**, the same instructions work. Select the inner **SideQuest** folder in step 3.
+The downloaded folder includes the source and an offline guide alongside the extension. Keep the folder in place after installing.
 
-## Your first round
+## Explore the arcade
 
-Send a message and keep the ChatGPT tab visible. If the **Stop** button stays on screen for about 5½ seconds, a card asks **“Play a game while you wait?”** Click **Play now** to start a random game. The arcade has 50 games, with rounds of up to 35 seconds. Dodge traffic in *Night Run*, change orbits in *Split Orbit*, solve a lights puzzle in *Night Switch*, or guide a fish through gold gates in *Koi Current*.
+- **50 short games** across four collections, with rounds of up to 35 seconds.
+- **Save favorites** with the ☆ beside Pause. Find them later under **Saved**.
+- **Try another game** with the dice button after a round, or choose **Play again** to replay the same one.
+- **Browse at your pace** by clearing **Play a random game** on the invitation. SideQuest remembers your choice and features a different game each time you open the library.
 
-Prefer to browse? Clear **Play a random game** on the invitation. SideQuest remembers your choice and opens the searchable library. A different cartridge is featured each time, cycling through all 50 before repeating. You can also dismiss the invitation or snooze it.
-
-Click the **☆** beside Pause during a round to add that game to **Saved**. A filled **★** means it’s saved. Click it again to remove it. When a round ends, **Play again** restarts the same game. The round **dice button** starts a different random game immediately.
+You can dismiss an invitation or snooze it. To open the arcade yourself, click the SideQuest toolbar icon and choose **Open arcade**.
 
 ### Make the game window yours
 
